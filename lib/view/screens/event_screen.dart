@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tickets_demo/core/app_assets.dart';
+import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/model/event_model.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
@@ -370,7 +371,12 @@ class _EventScreenState
                 SizedBox(
                   width: double.infinity,
                   child: CustomeButtonWidget(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                        context,
+                        AppRoutes.seatSelectionPage,
+                      );
+                    },
                     title: 'حجز مقعد',
                   ),
                 ),

@@ -4,6 +4,7 @@ import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/routes/generated_route.dart';
 import 'package:tickets_demo/view/screens/event_screen.dart';
 import 'package:tickets_demo/view/screens/home_screen.dart';
+import 'package:tickets_demo/view/screens/seat_selection_screen.dart';
 import 'package:tickets_demo/view/screens/splash_screen.dart';
 
 void
@@ -44,9 +45,9 @@ class MyApp
         ),
         fontFamily: "Cairo",
       ),
-      initialRoute: AppRoutes.splashPage,
-      onGenerateRoute: GeneratedRoute.generatedRoute,
-      // home: EventScreen(),
+      // initialRoute: AppRoutes.splashPage,
+      // onGenerateRoute: GeneratedRoute.generatedRoute,
+      home: SeatSelectionScreen(),
     );
   }
 }

@@ -5,11 +5,13 @@ class AppAssets {
   static const String seat = "assets/images/seat.svg";
   static const String location = "assets/images/location.svg";
   static const String eventImg = "assets/images/event1.jpg";
-  static const String artistImg = "https://www.watanserb.com/wp-content/uploads/2022/09/أصيل-هميم.png";
+  static const String artistImg =
+      "https://www.watanserb.com/wp-content/uploads/2022/09/أصيل-هميم.png";
   static const String home = "assets/images/home.svg";
   static const String discovery = "assets/images/discovery.svg";
   static const String bookmark = "assets/images/bookmark.svg";
   static const String profile = "assets/images/profile.svg";
   static const String arrowBack = "assets/images/arrow_back.svg";
   static const String save = "assets/images/save.svg";
+  static const String sheild = "assets/images/sheild.svg";
 }

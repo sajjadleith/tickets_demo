@@ -6,4 +6,5 @@ class AppRoutes {
   static const eventPage = "/event";
   static const seatSelectionPage = "/seats";
   static const checkoutPage = "/checkout";
+  static const paymentPage = "/payment";
 }

@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 
 class CustomButtonPriceWidget extends StatefulWidget {
-  const CustomButtonPriceWidget({super.key, required this.total});
+  const CustomButtonPriceWidget({
+    super.key,
+    required this.total,
+    required this.onTap,
+  });
   final int total;
+  final Function onTap;
 
   @override
   _CustomButtonPriceWidgetState createState() =>
@@ -20,9 +25,7 @@ class _CustomButtonPriceWidgetState extends State<CustomButtonPriceWidget> {
         borderRadius: BorderRadius.circular(16),
         splashColor: ThemeColors.primaryColor.withOpacity(0.1),
         highlightColor: ThemeColors.primaryColor.withOpacity(0.05),
-        onTap: () {
-          // كود الدفع هنا
-        },
+        onTap: () => widget.onTap(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           child: Row(

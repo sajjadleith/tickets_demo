@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tickets_demo/core/app_assets.dart';
+import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/model/event_model.dart';
 import 'package:tickets_demo/view/widget/custom_button_price_widget.dart';
@@ -286,7 +287,16 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                   ),
                 ),
                 SizedBox(height: 265),
-                CustomButtonPriceWidget(total: total.toInt()),
+                CustomButtonPriceWidget(
+                  total: total.toInt(),
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      AppRoutes.paymentPage,
+                      arguments: {"selectedCount": selectedSeats},
+                    );
+                  },
+                ),
               ],
             ),
           ),

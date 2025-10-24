@@ -5,6 +5,7 @@ import 'package:tickets_demo/view/screens/event_screen.dart';
 import 'package:tickets_demo/view/screens/home_screen.dart';
 import 'package:tickets_demo/view/screens/login_screen.dart';
 import 'package:tickets_demo/view/screens/otp_screen.dart';
+import 'package:tickets_demo/view/screens/payment_success_screen.dart';
 import 'package:tickets_demo/view/screens/seat_selection_screen.dart';
 import 'package:tickets_demo/view/screens/splash_screen.dart';
 
@@ -27,6 +28,10 @@ class GeneratedRoute {
       case AppRoutes.checkoutPage:
         return MaterialPageRoute(
           builder: (context) => CheckoutScreen(info: args),
+        );
+      case AppRoutes.paymentPage:
+        return MaterialPageRoute(
+          builder: (context) => PaymentSuccessScreen(info: args),
         );
 
       default:

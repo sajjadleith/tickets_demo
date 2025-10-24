@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tickets_demo/core/app_assets.dart';
@@ -9,39 +8,22 @@ import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/model/event_model.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
 
-class EventScreen
-    extends
-        StatefulWidget {
-  const EventScreen({
-    super.key,
-  });
+class EventScreen extends StatefulWidget {
+  const EventScreen({super.key});
 
   @override
-  State<
-    EventScreen
-  >
-  createState() => _EventScreenState();
+  State<EventScreen> createState() => _EventScreenState();
 }
 
-class _EventScreenState
-    extends
-        State<
-          EventScreen
-        > {
+class _EventScreenState extends State<EventScreen> {
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ThemeColors.primaryColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(
-              top: 10,
-              left: 22,
-              right: 22,
-            ),
+            padding: const EdgeInsets.only(top: 10, left: 22, right: 22),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,21 +34,15 @@ class _EventScreenState
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pop(
-                          context,
-                        );
+                        Navigator.pop(context);
                       },
-                      borderRadius: BorderRadius.circular(
-                        20,
-                      ),
+                      borderRadius: BorderRadius.circular(20),
                       child: Container(
                         alignment: Alignment.center,
                         width: 26,
                         height: 26,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            20,
-                          ),
+                          borderRadius: BorderRadius.circular(20),
                         ),
                         child: SvgPicture.asset(
                           AppAssets.arrowBack,
@@ -90,17 +66,13 @@ class _EventScreenState
                     ),
                     InkWell(
                       onTap: () {},
-                      borderRadius: BorderRadius.circular(
-                        20,
-                      ),
+                      borderRadius: BorderRadius.circular(20),
                       child: Container(
                         alignment: Alignment.center,
                         width: 26,
                         height: 26,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            20,
-                          ),
+                          borderRadius: BorderRadius.circular(20),
                         ),
                         child: SvgPicture.asset(
                           AppAssets.save,
@@ -116,70 +88,47 @@ class _EventScreenState
                     ),
                   ],
                 ),
+                SizedBox(height: 25),
                 SizedBox(
-                  height: 25,
-                ),
-                SizedBox(
-                  width: MediaQuery.sizeOf(
-                    context,
-                  ).width,
+                  width: MediaQuery.sizeOf(context).width,
                   height: 450,
                   child: CachedNetworkImage(
                     imageUrl: eventList[0].eventImg,
-                    imageBuilder:
-                        (
-                          context,
-                          imageProvider,
-                        ) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(
-                                20,
-                              ),
-                              image: DecorationImage(
-                                image: imageProvider,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          );
-                        },
-                    placeholder:
-                        (
-                          context,
-                          url,
-                        ) {
-                          return Skeletonizer(
-                            enabled: true,
-                            enableSwitchAnimation: true,
-                            child: Container(
-                              width: 312,
-                              height: 370,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(
-                                  20,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                    errorWidget:
-                        (
-                          context,
-                          url,
-                          error,
-                        ) => Skeletonizer(
-                          enabled: false,
-                          child: Container(
-                            width: double.infinity,
-                            height: 200,
-                            color: Colors.red,
+                    imageBuilder: (context, imageProvider) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            image: imageProvider,
+                            fit: BoxFit.cover,
                           ),
                         ),
+                      );
+                    },
+                    placeholder: (context, url) {
+                      return Skeletonizer(
+                        enabled: true,
+                        enableSwitchAnimation: true,
+                        child: Container(
+                          width: 312,
+                          height: 370,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                        ),
+                      );
+                    },
+                    errorWidget: (context, url, error) => Skeletonizer(
+                      enabled: false,
+                      child: Container(
+                        width: double.infinity,
+                        height: 200,
+                        color: Colors.red,
+                      ),
+                    ),
                   ),
                 ),
-                SizedBox(
-                  height: 12,
-                ),
+                SizedBox(height: 12),
                 Align(
                   alignment: AlignmentGeometry.centerRight,
                   child: Text(
@@ -191,9 +140,7 @@ class _EventScreenState
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 5.5,
-                ),
+                SizedBox(height: 5.5),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -208,17 +155,9 @@ class _EventScreenState
                             color: ThemeColors.thirdColor,
                           ),
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        SvgPicture.asset(
-                          AppAssets.seat,
-                          width: 20,
-                          height: 20,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
+                        SizedBox(width: 10),
+                        SvgPicture.asset(AppAssets.seat, width: 20, height: 20),
+                        SizedBox(width: 10),
                         Text(
                           "|",
                           style: TextStyle(
@@ -239,9 +178,7 @@ class _EventScreenState
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -253,12 +190,8 @@ class _EventScreenState
                         ),
                         height: 30,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            8,
-                          ),
-                          color: Color(
-                            0xff252932,
-                          ),
+                          borderRadius: BorderRadius.circular(8),
+                          color: Color(0xff252932),
                         ),
                         alignment: Alignment.center,
                         child: Text(
@@ -270,9 +203,7 @@ class _EventScreenState
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      SizedBox(width: 10),
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
@@ -280,12 +211,8 @@ class _EventScreenState
                         ),
                         height: 30,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            8,
-                          ),
-                          color: Color(
-                            0xff252932,
-                          ),
+                          borderRadius: BorderRadius.circular(8),
+                          color: Color(0xff252932),
                         ),
                         alignment: Alignment.center,
                         child: Text(
@@ -297,9 +224,7 @@ class _EventScreenState
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      SizedBox(width: 10),
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
@@ -307,12 +232,8 @@ class _EventScreenState
                         ),
                         height: 30,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            8,
-                          ),
-                          color: Color(
-                            0xff252932,
-                          ),
+                          borderRadius: BorderRadius.circular(8),
+                          color: Color(0xff252932),
                         ),
                         alignment: Alignment.center,
                         child: Text(
@@ -327,9 +248,7 @@ class _EventScreenState
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 Align(
                   alignment: AlignmentGeometry.centerRight,
                   child: Text(
@@ -341,13 +260,12 @@ class _EventScreenState
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
+                SizedBox(height: 10),
                 Text.rich(
                   textAlign: TextAlign.end,
                   TextSpan(
-                    text: "يتميز الحدث بحضور المطربين والمشهورين العرب لحضور هذا الحدث عليك شراء تذكرة وتحديد المقعد الخاص بك ",
+                    text:
+                        "يتميز الحدث بحضور المطربين والمشهورين العرب لحضور هذا الحدث عليك شراء تذكرة وتحديد المقعد الخاص بك ",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
@@ -365,9 +283,7 @@ class _EventScreenState
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 40,
-                ),
+                SizedBox(height: 40),
                 SizedBox(
                   width: double.infinity,
                   child: CustomeButtonWidget(
@@ -375,6 +291,7 @@ class _EventScreenState
                       Navigator.pushNamed(
                         context,
                         AppRoutes.seatSelectionPage,
+                        arguments: null,
                       );
                     },
                     title: 'حجز مقعد',

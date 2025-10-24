@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tickets_demo/core/app_assets.dart';
+import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/view/screens/seats_page.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
@@ -8,39 +9,23 @@ import 'package:tickets_demo/view/widget/legend_item_widget.dart';
 import 'package:tickets_demo/view/widget/screen_arc_widget.dart';
 import 'package:tickets_demo/view/widget/selection_row_widget.dart';
 
-class SeatSelectionScreen
-    extends
-        StatefulWidget {
-  SeatSelectionScreen({
-    Key? key,
-  }) : super(
-         key: key,
-       );
+class SeatSelectionScreen extends StatefulWidget {
+  SeatSelectionScreen({Key? key}) : super(key: key);
 
   @override
   _SeatSelectionScreenState createState() => _SeatSelectionScreenState();
 }
 
-class _SeatSelectionScreenState
-    extends
-        State<
-          SeatSelectionScreen
-        > {
+class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
   int selectedCount = 0;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ThemeColors.primaryColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(
-              top: 10,
-              left: 22,
-              right: 22,
-            ),
+            padding: const EdgeInsets.only(top: 10, left: 22, right: 22),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -51,21 +36,15 @@ class _SeatSelectionScreenState
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pop(
-                          context,
-                        );
+                        Navigator.pop(context);
                       },
-                      borderRadius: BorderRadius.circular(
-                        20,
-                      ),
+                      borderRadius: BorderRadius.circular(20),
                       child: Container(
                         alignment: Alignment.center,
                         width: 26,
                         height: 26,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(
-                            20,
-                          ),
+                          borderRadius: BorderRadius.circular(20),
                         ),
                         child: SvgPicture.asset(
                           AppAssets.arrowBack,
@@ -87,14 +66,10 @@ class _SeatSelectionScreenState
                         color: ThemeColors.secondaryColor,
                       ),
                     ),
-                    Text(
-                      "",
-                    ),
+                    Text(""),
                   ],
                 ),
-                SizedBox(
-                  height: 25,
-                ),
+                SizedBox(height: 25),
                 Directionality(
                   textDirection: TextDirection.rtl,
                   child: Text.rich(
@@ -118,25 +93,16 @@ class _SeatSelectionScreenState
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 ScreenArc(),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 SizedBox(
                   height: 300,
                   child: SeatsPage(
-                    onSelectionChanged:
-                        (
-                          count,
-                        ) {
-                          selectedCount = count;
-                          setState(
-                            () {},
-                          );
-                        },
+                    onSelectionChanged: (count) {
+                      selectedCount = count;
+                      setState(() {});
+                    },
                   ),
                 ),
                 Row(
@@ -149,9 +115,7 @@ class _SeatSelectionScreenState
                     ),
                     SelectionRowWidget(
                       title: "محجوزة",
-                      color: Color(
-                        0xFFDF6A66,
-                      ),
+                      color: Color(0xFFDF6A66),
                     ),
                     SelectionRowWidget(
                       title: "متاحة",
@@ -159,9 +123,7 @@ class _SeatSelectionScreenState
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 24,
-                ),
+                SizedBox(height: 24),
                 Align(
                   alignment: AlignmentGeometry.centerRight,
                   child: Text(
@@ -173,14 +135,13 @@ class _SeatSelectionScreenState
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
+                SizedBox(height: 10),
                 Directionality(
                   textDirection: TextDirection.rtl,
                   child: Text.rich(
                     TextSpan(
-                      text: "يتميز الحدث بحضور المطربين والمشهورين العرب لحضور هذا الحدث عليك شراء تذكرة وتحديد المقعد الخاص بك ",
+                      text:
+                          "يتميز الحدث بحضور المطربين والمشهورين العرب لحضور هذا الحدث عليك شراء تذكرة وتحديد المقعد الخاص بك ",
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
@@ -199,13 +160,17 @@ class _SeatSelectionScreenState
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 73,
-                ),
+                SizedBox(height: 73),
                 SizedBox(
                   width: double.infinity,
                   child: CustomeButtonWidget(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                        context,
+                        AppRoutes.checkoutPage,
+                        arguments: {"selectedCount": selectedCount},
+                      );
+                    },
                     title: "شراء تذكرة",
                   ),
                 ),

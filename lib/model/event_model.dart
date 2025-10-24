@@ -20,14 +20,12 @@ class EventModel {
   });
 }
 
-List<
-  EventModel
->
-eventList = [
+List<EventModel> eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -36,7 +34,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -45,7 +44,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -54,7 +54,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -63,7 +64,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -72,7 +74,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -81,7 +84,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -90,7 +94,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -99,7 +104,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -108,7 +114,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -117,7 +124,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -126,7 +134,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -135,7 +144,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -144,7 +154,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -153,7 +164,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -162,7 +174,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -171,7 +184,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -180,7 +194,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -188,7 +203,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -196,7 +212,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -204,7 +221,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -212,7 +230,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -220,7 +239,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -228,7 +248,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -236,7 +257,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -244,7 +266,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -252,7 +275,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -260,7 +284,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -268,7 +293,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -276,7 +302,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -284,7 +311,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -292,7 +320,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -300,7 +329,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -308,7 +338,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -316,7 +347,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -324,7 +356,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -332,7 +365,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -340,7 +374,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -348,7 +383,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -356,7 +392,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -364,7 +401,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -372,7 +410,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -380,7 +419,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -388,7 +428,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -396,7 +437,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -404,7 +446,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -412,7 +455,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -420,7 +464,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -428,7 +473,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -436,7 +482,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -444,7 +491,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -452,7 +500,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -460,7 +509,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -468,7 +518,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -476,7 +527,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -484,7 +536,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -492,7 +545,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -500,7 +554,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -508,7 +563,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -516,7 +572,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -524,7 +581,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -532,7 +590,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -540,7 +599,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -548,7 +608,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,
@@ -556,7 +617,8 @@ eventList = [
   EventModel(
     name: "حفل الفنانة اصيل هميم",
     location: "بغداد - المنصور",
-    eventImg: "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
+    eventImg:
+        "https://static.sayidaty.net/styles/900_scale/public/2021-10/5953.png.webp",
     artistImg: AppAssets.artistImg,
     date: "الجمعة، 11 تشرين الأول - 08:00 مساءاً",
     seats: 500,

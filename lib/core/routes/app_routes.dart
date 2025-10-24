@@ -5,4 +5,5 @@ class AppRoutes {
   static const homePage = "/home";
   static const eventPage = "/event";
   static const seatSelectionPage = "/seats";
+  static const checkoutPage = "/checkout";
 }

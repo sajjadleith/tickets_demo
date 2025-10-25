@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tickets_demo/core/app_assets.dart';
+import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
 
@@ -53,7 +54,12 @@ class ShowBottomSheetWidget {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(height: 70),
-                  CustomeButtonBlack(onPressed: () {}, title: "مشاهدة التذكرة"),
+                  CustomeButtonBlack(
+                    onPressed: () {
+                      Navigator.pushNamed(context, AppRoutes.ticketPage);
+                    },
+                    title: "مشاهدة التذكرة",
+                  ),
                 ],
               ),
             ),

@@ -7,4 +7,5 @@ class AppRoutes {
   static const seatSelectionPage = "/seats";
   static const checkoutPage = "/checkout";
   static const paymentPage = "/payment";
+  static const ticketPage = "/tickets";
 }

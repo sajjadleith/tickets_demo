@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tickets_demo/core/app_assets.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
+import 'package:tickets_demo/view/screens/bookmark_screen.dart';
 import 'package:tickets_demo/view/screens/explore_screen.dart';
 import 'package:tickets_demo/view/widget/custom_navbar.dart';
 import 'package:tickets_demo/view/widget/home_widget.dart';
@@ -20,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   late List<Widget> screens = [
     HomeWidget(searchController: _searchController),
     ExploreScreen(),
+    BookmarkScreen(),
   ];
   int currentIndex = 0;
   onChange(int index) {

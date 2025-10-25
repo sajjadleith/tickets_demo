@@ -8,6 +8,7 @@ import 'package:tickets_demo/view/screens/otp_screen.dart';
 import 'package:tickets_demo/view/screens/payment_success_screen.dart';
 import 'package:tickets_demo/view/screens/seat_selection_screen.dart';
 import 'package:tickets_demo/view/screens/splash_screen.dart';
+import 'package:tickets_demo/view/screens/ticket_screen.dart';
 
 class GeneratedRoute {
   static Route<dynamic> generatedRoute(RouteSettings settings) {
@@ -33,6 +34,8 @@ class GeneratedRoute {
         return MaterialPageRoute(
           builder: (context) => PaymentSuccessScreen(info: args),
         );
+      case AppRoutes.ticketPage:
+        return MaterialPageRoute(builder: (context) => TicketScreen());
 
       default:
         return MaterialPageRoute(

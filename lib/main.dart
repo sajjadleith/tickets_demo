@@ -4,6 +4,7 @@ import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/routes/generated_route.dart';
 import 'package:tickets_demo/view/screens/checkout_screen.dart';
 import 'package:tickets_demo/view/screens/payment_success_screen.dart';
+import 'package:tickets_demo/view/screens/ticket_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +29,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         fontFamily: "Cairo",
       ),
-      // initialRoute: AppRoutes.splashPage,
-      // onGenerateRoute: GeneratedRoute.generatedRoute,
-      home: PaymentSuccessScreen(),
+      initialRoute: AppRoutes.splashPage,
+      onGenerateRoute: GeneratedRoute.generatedRoute,
+      // home: TicketScreen(),
     );
   }
 }

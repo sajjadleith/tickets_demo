@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tickets_demo/core/app_assets.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/view/widget/custom_navbar.dart';
+import 'package:tickets_demo/view/widget/custom_search_widget.dart';
 import 'package:tickets_demo/view/widget/incomming_event_widget.dart';
 import 'package:tickets_demo/view/widget/nearest_events_widget.dart';
 
@@ -68,33 +69,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           SizedBox(
             width: 345,
             height: 54,
-            child: TextField(
-              controller: widget.searchController,
-              textDirection: TextDirection.rtl,
-              style: TextStyle(color: ThemeColors.thirdColor),
-              decoration: InputDecoration(
-                hintText: "البحث عن حدث",
-                hintTextDirection: TextDirection.rtl,
-                labelStyle: TextStyle(color: ThemeColors.secondaryColor),
-                suffixIcon: Icon(Icons.search),
-                suffixStyle: TextStyle(fontSize: 18),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(color: ThemeColors.secondaryColor),
-                ),
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 14,
-                ),
-
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: ThemeColors.thirdColor,
-                    width: .5,
-                  ),
-                ),
-              ),
-            ),
+            child: CustomSearchWidget(controller: widget.searchController),
           ),
           SizedBox(height: 16),
           IncommingEventWidget(),

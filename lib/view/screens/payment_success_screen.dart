@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tickets_demo/core/app_assets.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
+import 'package:tickets_demo/core/utility/validator.dart';
 import 'package:tickets_demo/model/event_model.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
 import 'package:tickets_demo/view/widget/date_picker_widget.dart';
@@ -28,6 +29,12 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
     final TextEditingController nameController = TextEditingController();
     final TextEditingController carNumberController = TextEditingController();
     final TextEditingController cvvController = TextEditingController();
+
+    void submit() {
+      if (formKey.currentState!.validate()) {
+        ShowBottomSheetWidget.showBottomSheet(context);
+      }
+    }
 
     return Scaffold(
       backgroundColor: ThemeColors.primaryColor,
@@ -208,7 +215,7 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                   SizedBox(height: 10),
                   TestformfieldCustomWidget(
                     controller: emailController,
-                    validator: null,
+                    validator: Validator.validateEmail,
                     title: "testforpay@gmail.com",
                   ),
                   SizedBox(height: 16),
@@ -223,7 +230,7 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                   SizedBox(height: 10),
                   TestformfieldCustomWidget(
                     controller: nameController,
-                    validator: null,
+                    validator: Validator.validateName,
                     title: "Othman Luqman",
                   ),
                   SizedBox(height: 16),
@@ -238,7 +245,7 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                   SizedBox(height: 10),
                   TestformfieldCustomWidget(
                     controller: carNumberController,
-                    validator: null,
+                    validator: Validator.validateCard,
                     title: "1234 5678 9101 13131",
                   ),
                   SizedBox(height: 16),
@@ -258,7 +265,10 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                             ),
                           ),
                           SizedBox(height: 10),
-                          ExpiryDatePicker(),
+                          ExpiryDatePicker(
+                            validator: (value) =>
+                                Validator.validateExpiryDate(value),
+                          ),
                         ],
                       ),
                       SizedBox(width: 50),
@@ -277,11 +287,11 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                             ),
                             SizedBox(height: 10),
                             SizedBox(
-                              width: 141,
-                              height: 48,
+                              // width: 141,
+                              // height: 48,
                               child: TestformfieldCustomWidget(
                                 controller: cvvController,
-                                validator: null,
+                                validator: Validator.validateCVV,
                                 title: "123",
                               ),
                             ),
@@ -294,8 +304,9 @@ class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: CustomeButtonWidget(
-                      onPressed: () =>
-                          ShowBottomSheetWidget.showBottomSheet(context),
+                      onPressed: () {
+                        submit();
+                      },
                       title: "شراء الان",
                     ),
                   ),

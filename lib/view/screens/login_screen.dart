@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tickets_demo/core/app_assets.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/core/routes/app_routes.dart';
+import 'package:tickets_demo/core/utility/validator.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
 import 'package:tickets_demo/view/widget/phone_widget.dart';
 
@@ -19,18 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String? phoneValidation(value) {
-      if (value == null || value.isEmpty) {
-        return "ادخل رقم الهاتف";
-      } else if (value.length != 11) {
-        return "دخل ١١ رقم";
-      } else if (!RegExp(r'^(?:\+964|0)?7\d{9}$').hasMatch(value)) {
-        return "ادخل رقم عراقي يبدي ب 07";
-      } else {
-        return null;
-      }
-    }
-
     return Scaffold(
       backgroundColor: ThemeColors.primaryColor,
       body: SafeArea(
@@ -48,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: PhoneWidget(
                       formKey: _key,
                       phoneController: _phoneController,
-                      phoneValidation: phoneValidation,
+                      phoneValidation: Validator.phoneValidation,
                     ),
                   ),
                   SizedBox(height: 16),

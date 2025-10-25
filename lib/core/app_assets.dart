@@ -14,4 +14,6 @@ class AppAssets {
   static const String arrowBack = "assets/images/arrow_back.svg";
   static const String save = "assets/images/save.svg";
   static const String sheild = "assets/images/sheild.svg";
+  static const String ticket = "assets/images/ticket.jpeg";
+  static const String parcode = "assets/images/parcode.svg";
 }

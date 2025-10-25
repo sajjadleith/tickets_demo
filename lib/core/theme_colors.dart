@@ -6,4 +6,5 @@ class ThemeColors {
   static Color thirdColor = Color(0xffB2B5BB);
   static Color fourthColor = Color(0xff32363D);
   static Color goldColor = Color(0xFFFDF5D6);
+  static Color redColor = Color(0xffF14763);
 }

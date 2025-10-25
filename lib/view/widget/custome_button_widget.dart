@@ -54,3 +54,35 @@ class _CustomeButtonBlackState extends State<CustomeButtonBlack> {
     );
   }
 }
+
+class CustomButtonWidgetRed extends StatefulWidget {
+  const CustomButtonWidgetRed({
+    super.key,
+    required this.onPressed,
+    required this.title,
+  });
+  final VoidCallback onPressed;
+  final String title;
+
+  @override
+  _CustomButtonWidgetRedState createState() => _CustomButtonWidgetRedState();
+}
+
+class _CustomButtonWidgetRedState extends State<CustomButtonWidgetRed> {
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: ThemeColors.redColor,
+        foregroundColor: ThemeColors.secondaryColor,
+        padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 12),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      ),
+      onPressed: widget.onPressed,
+      child: Text(
+        widget.title,
+        style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+}

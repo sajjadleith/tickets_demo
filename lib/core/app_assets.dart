@@ -16,4 +16,11 @@ class AppAssets {
   static const String sheild = "assets/images/sheild.svg";
   static const String ticket = "assets/images/ticket.jpeg";
   static const String parcode = "assets/images/parcode.svg";
+  static const String personImage = "assets/images/person_image.png";
+  static const String message = "assets/images/message.svg";
+  static const String wallet = "assets/images/wallet.svg";
+  static const String trash = "assets/images/trash.svg";
+  static const String ring = "assets/images/ring.svg";
+  static const String profileTicket = "assets/images/profile_ticket.svg";
+  static const String logout = "assets/images/logout.svg";
 }

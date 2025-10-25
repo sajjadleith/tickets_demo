@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tickets_demo/core/routes/app_routes.dart';
+import 'package:tickets_demo/view/screens/cancel_screen.dart';
 import 'package:tickets_demo/view/screens/checkout_screen.dart';
 import 'package:tickets_demo/view/screens/event_screen.dart';
 import 'package:tickets_demo/view/screens/home_screen.dart';
 import 'package:tickets_demo/view/screens/login_screen.dart';
+import 'package:tickets_demo/view/screens/my_tickets_screen.dart';
+import 'package:tickets_demo/view/screens/notification_screen.dart';
 import 'package:tickets_demo/view/screens/otp_screen.dart';
 import 'package:tickets_demo/view/screens/payment_success_screen.dart';
+import 'package:tickets_demo/view/screens/profile_setting_screen.dart';
 import 'package:tickets_demo/view/screens/seat_selection_screen.dart';
 import 'package:tickets_demo/view/screens/splash_screen.dart';
 import 'package:tickets_demo/view/screens/ticket_screen.dart';
@@ -36,6 +40,16 @@ class GeneratedRoute {
         );
       case AppRoutes.ticketPage:
         return MaterialPageRoute(builder: (context) => TicketScreen());
+      case AppRoutes.profilePage:
+        return MaterialPageRoute(builder: (context) => ProfileSettingScreen());
+      case AppRoutes.cancelPage:
+        return MaterialPageRoute(
+          builder: (context) => DeactivateAccountScreen(),
+        );
+      case AppRoutes.notificationPage:
+        return MaterialPageRoute(builder: (context) => NotificationsScreen());
+      case AppRoutes.myTicketsPage:
+        return MaterialPageRoute(builder: (context) => MyTicketsScreen());
 
       default:
         return MaterialPageRoute(

@@ -8,4 +8,8 @@ class AppRoutes {
   static const checkoutPage = "/checkout";
   static const paymentPage = "/payment";
   static const ticketPage = "/tickets";
+  static const profilePage = "/profile";
+  static const cancelPage = "/cancel";
+  static const notificationPage = "/notification";
+  static const myTicketsPage = "/mytickets";
 }

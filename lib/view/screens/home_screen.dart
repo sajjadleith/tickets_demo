@@ -3,6 +3,7 @@ import 'package:tickets_demo/core/app_assets.dart';
 import 'package:tickets_demo/core/theme_colors.dart';
 import 'package:tickets_demo/view/screens/bookmark_screen.dart';
 import 'package:tickets_demo/view/screens/explore_screen.dart';
+import 'package:tickets_demo/view/screens/profile_screen.dart';
 import 'package:tickets_demo/view/widget/custom_navbar.dart';
 import 'package:tickets_demo/view/widget/home_widget.dart';
 import 'package:tickets_demo/view/widget/incomming_event_widget.dart';
@@ -22,9 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeWidget(searchController: _searchController),
     ExploreScreen(),
     BookmarkScreen(),
+    ProfileScreen(),
   ];
   int currentIndex = 0;
-  onChange(int index) {
+  void onChange(int index) {
     currentIndex = index;
     setState(() {});
   }

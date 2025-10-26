@@ -9,7 +9,10 @@ class AppRoutes {
   static const paymentPage = "/payment";
   static const ticketPage = "/tickets";
   static const profilePage = "/profile";
+  static const settingPage = "/setting";
   static const cancelPage = "/cancel";
   static const notificationPage = "/notification";
   static const myTicketsPage = "/mytickets";
+  static const walletPage = "/wallet";
+  static const walletInfoPage = "/wallet_info";
 }

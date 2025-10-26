@@ -6,6 +6,7 @@ import 'package:tickets_demo/core/routes/app_routes.dart';
 import 'package:tickets_demo/core/utility/validator.dart';
 import 'package:tickets_demo/view/widget/custome_button_widget.dart';
 import 'package:tickets_demo/view/widget/phone_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);

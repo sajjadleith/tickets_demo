@@ -6,7 +6,7 @@ class AppAssets {
   static const String location = "assets/images/location.svg";
   static const String eventImg = "assets/images/event1.jpg";
   static const String artistImg =
-      "https://www.watanserb.com/wp-content/uploads/2022/09/أصيل-هميم.png";
+      "https://static.srpcdigital.com/styles/1037xauto/public/2024-06/667543.jpeg.webp";
   static const String home = "assets/images/home.svg";
   static const String discovery = "assets/images/discovery.svg";
   static const String bookmark = "assets/images/bookmark.svg";

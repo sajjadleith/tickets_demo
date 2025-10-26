@@ -100,7 +100,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   cardTitle: "المحفظة",
                   color: ThemeColors.profileColor2,
                   iconSvg: AppAssets.wallet,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, AppRoutes.walletPage);
+                  },
                 ),
                 SizedBox(height: 16),
                 ProfileWidget(
@@ -145,7 +147,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   color: ThemeColors.redColor,
                   iconSvg: AppAssets.logout,
                   onTap: () {
-                    Navigator.pushNamed(context, AppRoutes.loginPage);
+                    Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      AppRoutes.loginPage,
+                      (Route<dynamic> route) => false,
+                    );
                   },
                 ),
               ],
